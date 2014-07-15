@@ -1,0 +1,25 @@
+{
+  "name": "matrix_directive",
+  "version": "0.0.0",
+  "authors": [
+    "Francesco Bruschi <fbrusch@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "description": "Fancy pixels in a fancy matrix",
+  "main": "main.js",
+  "keywords": [
+    "matrix",
+    "pixels"
+  ],
+  "dependencies": {
+    "angular": "~1.2.20"
+  }
+}

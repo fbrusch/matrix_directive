@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        script(src="static/components/angular/angular.min.js")
+        script(src="static/components/matrix/matrix.js")
+        link(rel="stylesheet", href="static/components/matrix/matrix.css")
+        script
+            :coffee
+                app = angular.module "app", ["matrix"]
+                app.controller "mainc", ($scope) ->
+                    $scope.cont = "vgvggvg"
+        != LRScript
+
+            
+    body(ng-app="app", ng-controller="mainc")
+        
+        matrix(rows="4",cols="4",content="cont")
+        input(type=text,ng-model="cont")
+
+
