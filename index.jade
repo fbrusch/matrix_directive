@@ -9,12 +9,14 @@ html
                 app = angular.module "app", ["matrix"]
                 app.controller "mainc", ($scope) ->
                     $scope.cont = "vgvggvg"
+                    $scope.dim = 4
         != LRScript
 
             
     body(ng-app="app", ng-controller="mainc")
         
-        matrix(rows="4",cols="4",content="cont")
+        matrix(rows="dim",cols="dim",content="cont")
         input(type=text,ng-model="cont")
+        input(type=text,ng-model="dim")
 
 
