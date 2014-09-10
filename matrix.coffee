@@ -9,6 +9,7 @@ app.directive "matrix", ($compile) ->
         createMatrix = ->
             element.empty()
             e = document.createElement("table")
+            e.className = e.className + " matrix"
             for j in [0..parseInt(scope.rows)-1]
                 r = document.createElement("tr")
                 for i in [0..parseInt(scope.cols)-1]

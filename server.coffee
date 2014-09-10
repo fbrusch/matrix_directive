@@ -1,6 +1,8 @@
 express = require 'express'
 livereload = require 'express-livereload'
 
+PORT = process.env.PORT || 10000
+
 app = express()
 
 livereload(app, config={watchDir: process.cwd()})
@@ -12,4 +14,5 @@ app.engine 'jade', require('jade').__express
 app.get "/", (req, res) ->
     res.render (__dirname + "/index.jade")
 
-app.listen 10000
+console.log "You can admire the matrix connecting to localhost, at port #{PORT}"
+app.listen PORT
